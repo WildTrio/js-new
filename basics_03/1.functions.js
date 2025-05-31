@@ -30,3 +30,30 @@ function message(username="abc"){//default value is abc
 }
 console.log(message("walter"))//walter just logged in...default value overwrited
 console.log(message());//undefined
+
+function cart(...num1){//... is a rest operator
+    return num1
+}
+console.log(cart(200,400,500));//[200,400,500]...beacuse of ... operator
+
+function cart2(num1,num2,...num3){
+    return num3
+}
+console.log(cart2(200,400,500,600,700))//num1 will take 200,num2 will take 400 and the rest values will be taken by num3
+
+const user={
+    name:"walter",
+    age:18
+}
+function fun(obj){
+    return `${obj.name} is ${obj.age} years old`
+}
+console.log(fun(user));
+
+console.log(fun({name:"jesse",age:20}));
+
+const arr=[100,200,300,400]
+function val(a){
+    return a[1]
+}
+console.log(val(arr));
