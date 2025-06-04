@@ -5,8 +5,6 @@ const arr=[1,2,3,4,5];
 // },0)
 const total=arr.reduce((acc,curr)=>acc+curr,0)
 console.log(total);
-
-
 const cart=[
     {
         itemname:"js",
