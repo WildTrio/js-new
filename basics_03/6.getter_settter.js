@@ -20,4 +20,7 @@ try {
 catch (e) {
     alert(e)//will run on browser
 }
+finally{//this statement will always run regardless of error
+    console.log("finally will always run ");
+}
 console.log(full_name.fullname);//walter white
