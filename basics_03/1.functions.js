@@ -29,7 +29,7 @@ function message(username="abc"){//default value is abc
     
 }
 console.log(message("walter"))//walter just logged in...default value overwrited
-console.log(message());//undefined
+console.log(message());//abc just logged in
 
 function cart(...num1){//... is a rest operator
     return num1

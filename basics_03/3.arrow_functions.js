@@ -6,9 +6,9 @@ const user={
         console.log(this)
     }
 }
-user.message()//hello, walter
+user.message()//walter, hello
 user.name="jesse"
-user.message()//hello, jesse
+user.message()//jesse, hello
 console.log(this);//{}
 
 // function fun(){
