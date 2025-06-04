@@ -1,0 +1,28 @@
+--------there are various methods to select a html object---------
+1.getelementbyID()
+    it is called on document object
+    it always returns a single element
+2.getelementbyclass()
+    it is also called on a document object
+    it returns a html collecion(an array like object but not an array)
+    we can iterate through for each loop
+3.getelementbytagname()
+    it also return a html collection
+4.queryselector()
+    it returns the first object which matches the query in the doucument
+5.queryselectorall()
+    it returns all the element which matches trhe query in the document.
+    it also return html collection
+
+
+-------update the webpage---------
+1.inner html
+    gets an element/all of its descendents
+    stes an elements html content
+2.outer html
+    Returns or sets the entire HTML of the element itself, including the element's own tag.
+3.text content
+    get/set the text content,ignoring any HTML tags.
+    it will also display the text whose display is hidden
+4.inner text
+    it will only display those text whose display is not hidden
