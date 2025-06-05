@@ -1,0 +1,6 @@
+-------pseudocode-------
+<event-target>.addeventlistner(<event to listen for>,<functtion to run when event happened>)
+to run addeventlistner three things to be known
+    1.event target-component on which listner to be applied
+    2.event type-(click,double-click,hover etc)
+    3.function-define what to do when event happen
