@@ -1,6 +1,19 @@
 -------pseudocode-------
-<event-target>.addeventlistner(<event to listen for>,<functtion to run when event happened>)
+<event-target>.addeventlistner(<event to listen for>,<functtion to run when event happened>,<use capture>)
 to run addeventlistner three things to be known
     1.event target-component on which listner to be applied
     2.event type-(click,double-click,hover etc)
     3.function-define what to do when event happen
+-------phases of an event-------
+    1.capaturing phase
+    2.at target phase
+    3.bubbling phase
+by default the event listner executes at bubbling phase
+but if we want to change it to capturing phase then-
+    addeventlistner(<type>,function,true)
+to apply event listner at target phase apply both use-capture="true" and use-capture="true"
+
+
+-------the default action
+anchor tag-opens link
+we can prevent default action by .preventDefault()
