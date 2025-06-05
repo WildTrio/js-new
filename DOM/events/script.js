@@ -52,28 +52,29 @@
 
 
 
-//event target property
-// let newdiv=document.createElement('div')
-// function fun(event){
-//         console.log("paragraph "+event.target.textContent);
-//     }
-// newdiv.addEventListener('click',fun)
-// for(let i=0;i<100;i++){
-//     let newelement=document.createElement('p')
-//     newelement.textContent="this is paraagraph "+i;
-//     newdiv.appendChild(newelement)
-// }
-// document.body.appendChild(newdiv)
-
-
-
-
-let element=document.querySelector(".a")
-// element.addEventListener('click',function(event){
-//     console.log('clicked '+event.target.textContent)
-// })//here if we clcked on span than clicked span will be printed and if we click on paragraph then clicked paragraph span will be printed to avoid this node name property will be used
-element.addEventListener('click',function(event){
-    if(event.target.nodeName==="SPAN"){
-        console.log('clicked '+event.target.textContent)
+// event target property
+let newdiv=document.createElement('div')
+function fun(event){
+    if(event.target.nodeName==="P")
+        console.log("paragraph "+event.target.textContent);
     }
-})
+newdiv.addEventListener('click',fun)
+for(let i=0;i<100;i++){
+    let newelement=document.createElement('p')
+    newelement.textContent="this is paraagraph "+i;
+    newdiv.appendChild(newelement)
+}
+document.body.appendChild(newdiv)
+
+
+
+
+// let element=document.querySelector(".a")
+// // element.addEventListener('click',function(event){
+// //     console.log('clicked '+event.target.textContent)
+// // })//here if we clcked on span than clicked span will be printed and if we click on paragraph then clicked paragraph span will be printed to avoid this node name property will be used
+// element.addEventListener('click',function(event){
+//     if(event.target.nodeName==="SPAN"){
+//         console.log('clicked '+event.target.textContent)
+//     }
+// })
