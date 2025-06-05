@@ -17,13 +17,39 @@
 //     event.preventDefault();
 //     console.log("now the link will not open")
 // })
+
+
+
+// let newdiv=document.createElement('div')
+// function fun(event,i){
+//         console.log(`clicked ${i}`);
+//     }
+// for(let i=0;i<100;i++){
+//     let newelement=document.createElement('p')
+//     newelement.textContent="this is paraagraph "+i;
+//     newelement.addEventListener('click',(event)=>fun(event,i) )
+//     newdiv.appendChild(newelement)
+// }
+// document.body.appendChild(newdiv)
+//but this code is not optimized
+
+
+
+
 let newdiv=document.createElement('div')
+function fun(event){
+        console.log("clicked");
+    }
+newdiv.addEventListener('click',fun)
 for(let i=0;i<100;i++){
     let newelement=document.createElement('p')
     newelement.textContent="this is paraagraph "+i;
-    newelement.addEventListener('click', function(event){
-        console.log(`clicked ${i}`);
-    })
     newdiv.appendChild(newelement)
 }
 document.body.appendChild(newdiv)
+//this ccode is more optimized but the paragraphs that were added hast lost there individuality
+//now we cant access the paragraph individually
+
+
+
+//event target property
