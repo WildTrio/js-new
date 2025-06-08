@@ -1,3 +1,19 @@
+// let p=new Promise((resolve,reject)=>{
+//     let a=1+1
+//     if(a==2){
+//         resolve("success")
+//     }
+//     else{
+//         reject("failed")
+//     }
+// })
+// p.then((message)=>{
+//     console.log(`then ${message}`)
+// }).catch((message)=>{
+//     console.log(`catch ${message}`);
+// })
+
+
 // let p1=new Promise(function(resolve,reject){
 //     setTimeout(function(){
 //         console.log("inside promise1")
@@ -64,24 +80,25 @@
 // fun()
 
 
-async function helper(){
-    let options={
-        method:'POST',
-        body:JSON.stringify({
-            title:'hello',
-            body:'hello',
-            userId:1,
-        }),
-        headers:{
-            'Content-type':'application/json; charset=UTF-8',
-        },
-    }
-    let content=await fetch('https://jasonplaceholder.typicode.com/posts',options)
-    let response=content.json()
-    return response
-}
-async function fun(){
-    let ans=await helper();
-    console.log(ans)
-}
-fun()
+// async function helper(){
+//     let options={
+//         method:'POST',
+//         body:JSON.stringify({
+//             title:'hello',
+//             body:'hello',
+//             userId:1,
+//         }),
+//         headers:{
+//             'Content-type':'application/json; charset=UTF-8',
+//         },
+//     }
+//     let content=await fetch('https://jasonplaceholder.typicode.com/posts',options)
+//     let response=content.json()
+//     return response
+// }
+// async function fun(){
+//     let ans=await helper();
+//     console.log(ans)
+// }
+// fun()
+
